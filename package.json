@@ -7,7 +7,9 @@
     "build": "unibit build",
     "develop": "unibit develop",
     "start": "unibit develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   "homepage": "https://docs.stackbit.com/unibit/",
   "dependencies": {
     "@stackbit/unibit": "~0.1.11",
-    "nodemon": "^1.19.1"
-  }
+    "nodemon": "^1.19.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
